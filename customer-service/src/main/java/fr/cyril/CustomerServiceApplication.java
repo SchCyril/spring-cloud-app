@@ -3,12 +3,15 @@ package fr.cyril;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 
+import fr.cyril.config.CustomerConfigParams;
 import fr.cyril.entities.Customer;
 import fr.cyril.repository.CustomerRepository;
 
 @SpringBootApplication
+@EnableConfigurationProperties(CustomerConfigParams.class)
 public class CustomerServiceApplication {
 
 	public static void main(String[] args) {
