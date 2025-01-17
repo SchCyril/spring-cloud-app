@@ -1,12 +1,8 @@
 package fr.cyril.entities;
 
-import java.util.Date;
-import java.util.List;
-
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonProperty.Access;
 
-import fr.cyril.model.Customer;
 import fr.cyril.model.Product;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
